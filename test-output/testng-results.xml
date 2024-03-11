@@ -1,41 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-11T10:14:56 ICT" name="Suite" finished-at="2024-03-11T10:15:28 ICT" duration-ms="31834">
+  <suite started-at="2024-03-11T16:46:52 ICT" name="Default suite" finished-at="2024-03-11T16:47:21 ICT" duration-ms="28221">
     <groups>
     </groups>
-    <test started-at="2024-03-11T10:14:56 ICT" name="Test2" finished-at="2024-03-11T10:15:27 ICT" duration-ms="31372">
-      <class name="uk.co.automationtesting.OrderCompleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.OrderCompleteTest@729d991e]" started-at="2024-03-11T10:14:56 ICT" name="setup" finished-at="2024-03-11T10:15:02 ICT" duration-ms="6047" status="PASS">
+    <test started-at="2024-03-11T16:46:52 ICT" name="Default test" finished-at="2024-03-11T16:47:21 ICT" duration-ms="28221">
+      <class name="uk.co.automationtesting.ShopLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.ShopLoginTest@614ca7df]" started-at="2024-03-11T16:46:53 ICT" name="setup" finished-at="2024-03-11T16:46:58 ICT" duration-ms="5159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="endToEndTest()[pri:0, instance:uk.co.automationtesting.OrderCompleteTest@729d991e]" started-at="2024-03-11T10:15:02 ICT" name="endToEndTest" finished-at="2024-03-11T10:15:26 ICT" duration-ms="23838" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endToEndTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.OrderCompleteTest@729d991e]" started-at="2024-03-11T10:15:26 ICT" name="tearDown" finished-at="2024-03-11T10:15:27 ICT" duration-ms="1142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- uk.co.automationtesting.OrderCompleteTest -->
-    </test> <!-- Test2 -->
-    <test started-at="2024-03-11T10:14:56 ICT" name="Test" finished-at="2024-03-11T10:15:28 ICT" duration-ms="31834">
-      <class name="uk.co.automationtesting.AddRemoveItemBasketTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:uk.co.automationtesting.AddRemoveItemBasketTest@47faa49c]" started-at="2024-03-11T10:14:56 ICT" name="setup" finished-at="2024-03-11T10:15:01 ICT" duration-ms="4335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addRemoveItem()[pri:0, instance:uk.co.automationtesting.AddRemoveItemBasketTest@47faa49c]" started-at="2024-03-11T10:15:01 ICT" name="addRemoveItem" finished-at="2024-03-11T10:15:26 ICT" duration-ms="25782" status="FAIL">
+        <test-method signature="endToEndTest()[pri:0, instance:uk.co.automationtesting.ShopLoginTest@614ca7df]" started-at="2024-03-11T16:46:58 ICT" name="endToEndTest" finished-at="2024-03-11T16:47:19 ICT" duration-ms="21501" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cart amount did not match the expected amount, it found $45.24 expected $45.23]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Cart amount did not match the expected amount, it found $45.24 expected $45.23
+              <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:99)
-at uk.co.automationtesting.AddRemoveItemBasketTest.addRemoveItem(AddRemoveItemBasketTest.java:80)
+at org.testng.Assert.fail(Assert.java:106)
+at uk.co.automationtesting.ShopLoginTest.endToEndTest(ShopLoginTest.java:99)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,24 +37,29 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addRemoveItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.AddRemoveItemBasketTest@47faa49c]" started-at="2024-03-11T10:15:27 ICT" name="tearDown" finished-at="2024-03-11T10:15:28 ICT" duration-ms="1145" status="PASS">
+        </test-method> <!-- endToEndTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uk.co.automationtesting.ShopLoginTest@614ca7df]" started-at="2024-03-11T16:47:19 ICT" name="tearDown" finished-at="2024-03-11T16:47:21 ICT" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- uk.co.automationtesting.AddRemoveItemBasketTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- uk.co.automationtesting.ShopLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -19,6 +19,7 @@ public class ShopHomepage extends BasePage {
 	By productSix = By.linkText("Mug The Best Is Yet To Come");
 	By productSeven = By.linkText("Mug The Adventure Begins");
 	By productEight = By.linkText("Mug Today Is A Good Day");
+	By loginBtn = By.cssSelector("[title] .hidden-sm-down");
 
 	public ShopHomepage() throws IOException {
 		super();
@@ -62,5 +63,10 @@ public class ShopHomepage extends BasePage {
 	public WebElement getProdEight() throws IOException {
 		this.driver = getDriver();
 		return driver.findElement(productEight);
+	}
+	
+	public WebElement getLoginBtn() throws IOException {
+		this.driver = getDriver();
+		return driver.findElement(loginBtn);
 	}
 }
